@@ -77,7 +77,8 @@ function sentenceCase(){
 
 //Capitalize Case
 function capitalizeCase() {
-    const text = document.getElementById("principal-text").value
+	try {
+		const text = document.getElementById("principal-text").value
     if (text !== ""){
         const sentence = text.toLowerCase().split(" ");
         for(var i = 0; i< sentence.length; i++){
@@ -86,7 +87,13 @@ function capitalizeCase() {
         document.getElementById("principal-text").value = sentence.join(" ");
     }else{
         document.getElementById("principal-text").value = ""
-    }
+		}
+	}
+	catch(error) {
+		console.error(error);
+		// expected output: ReferenceError: nonExistentFunction is not defined
+		// Note - error messages will vary depending on browser
+	}
 }
 
 //Alternating Case
@@ -101,6 +108,7 @@ function alternatingCase() {
 
 //Inverse Case
 function inverseCase(){
+	try{
     const letters = document.getElementById("principal-text").value
     var newLetters = "";
     for(var i = 0; i<letters.length; i++){
@@ -111,28 +119,37 @@ function inverseCase(){
         }
     }
     document.getElementById("principal-text").value = newLetters
+	}catch(error){
+		console.log(error)
+	}
 }
   
 function incrementText() {
-    //count characters
-    const count = document.getElementById("principal-text").value.length;
-    setCount(count)
+	try{
+		//count characters
+		const count = document.getElementById("principal-text").value.length;
+		setCount(count)
 
-    //count Word Count
-    const count2 = document.getElementById("principal-text").value
-    if(count2 === ""){
-        const wordCount = 0
-        setCountWords(wordCount)
-    }
-    else{
-        const wordCount = count2.match(/(\w+)/g).length;
-        setCountWords(wordCount)
-    }
+		//count Word Count
+		const count2 = document.getElementById("principal-text").value
+		if(count2 === ""){
+				const wordCount = 0
+				setCountWords(wordCount)
+		}
+		else{
+				const wordCount = count2.match(/(\w+)/g).length;
+				setCountWords(wordCount)
+		}
 
-    //const Count line
-    const count3 =  document.getElementById("principal-text").value
-    const lineCount = count3.split('\n').length;
-    setCountLines(lineCount)
+		//const Count line
+		const count3 =  document.getElementById("principal-text").value
+		const lineCount = count3.split('\n').length;
+		setCountLines(lineCount)
+		}catch(error) {
+			console.error(error);
+		// expected output: ReferenceError: nonExistentFunction is not defined
+		// Note - error messages will vary depending on browser
+	}
 }  
 
 return (
