@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState} from "react";
 import styled from 'styled-components'
 
 const TextArea = styled.textarea`
@@ -8,11 +8,47 @@ const TextArea = styled.textarea`
 
 const ConvertCase = () => {
 
+const [count, setCount] = useState(0)
+
+const [count2, setCount2] = useState(0)
+
+const [count3, setCount3] = useState(1)
+
+
+
+function incrementText() {
+    //count characters
+    const count = document.getElementById("principal-text").value.length;
+    setCount(count)
+
+    //count Word Count
+    const count2 = document.getElementById("principal-text").value
+    if(count2 === ""){
+        const wordCount = 0
+        setCount2(wordCount)
+    }
+    else{
+        const wordCount = count2.match(/(\w+)/g).length;
+        setCount2(wordCount)
+    }
+
+    //const Count line
+    const count3 =  document.getElementById("principal-text").value
+    const lineCount = count3.split('\n').length;
+    setCount3(lineCount)
+}
+
+
+
 return (
     <>
         <h1 className="text-center">Online Converter</h1>
         
-        <TextArea rows="10" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight outline-none" placeholder="Type or paste your content here"/>
+        <TextArea
+        onChange={incrementText}
+        rows="10" 
+        id="principal-text"
+        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight outline-none" placeholder="Type or paste your content here"/>
 
         <div className="grid grid-cols-5 gap-4">
             <button 
@@ -66,7 +102,7 @@ return (
             </button>
         </div>
 
-        <p className="text-center pt-8">Character Count: 0 | Word Count: 0 | Line Count: 0 </p>
+        <p className="text-center pt-8">Character Count: {count} | Word Count: {count2} | Line Count: {count3} </p>
     </>
     );
 }
