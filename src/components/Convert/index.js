@@ -162,7 +162,7 @@ return (
         id="principal-text"
         className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight outline-none" placeholder="Type or paste your content here"/>
 
-        <div className="grid grid-cols-5 gap-4">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
             <button 
                 onClick={sentenceCase}
                 className="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow focus:outline-none">

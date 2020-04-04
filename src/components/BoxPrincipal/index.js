@@ -1,5 +1,6 @@
 import React from "react";
 import ConvertCase from "../Convert/index";
+import AdicionalInformation from "../AdicionalInformation/index"
 
 const Card = () => {
     return(
@@ -8,6 +9,9 @@ const Card = () => {
                 <div className="rounded-lg border shadow-lg p-10 m-8 bg-white">
                     < ConvertCase />
                 </div>
+            </div>
+            <div className="flex-none text-center px-10 py-2 m-8">
+                <AdicionalInformation />
             </div>
         </>
     )
