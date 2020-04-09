@@ -1,6 +1,7 @@
 import React from "react";
 import ConvertCase from "../Convert/index";
 import AdicionalInformation from "../AdicionalInformation/index"
+import Footer from "../Footer/index"
 
 const Card = () => {
     return(
@@ -12,6 +13,9 @@ const Card = () => {
             </div>
             <div className="flex-none text-center px-10 py-2 m-8">
                 <AdicionalInformation />
+            </div>
+            <div className="flex-none text-center px-10 py-2 m-8">
+                <Footer />
             </div>
         </>
     )
