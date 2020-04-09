@@ -15,6 +15,7 @@ const Card = () => {
                 <AdicionalInformation />
             </div>
             <div className="flex-none text-center px-10 py-2 m-8">
+                <hr className="m-5"/>
                 <Footer />
             </div>
         </>
