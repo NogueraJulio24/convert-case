@@ -154,13 +154,13 @@ function incrementText() {
 
 return (
     <>
-        <h1 className="text-center">Online Converter</h1>
+        <h1 className="text-center font-bold text-3xl mb-1">Welcome to the Online Text Converter</h1>
         
         <TextArea
         onChange={incrementText}
         rows="10" 
         id="principal-text"
-        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight outline-none" placeholder="Type or paste your content here"/>
+        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight outline-none" placeholder="Type or paste your content here and choose the case you want to convert it to"/>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
             <button 
