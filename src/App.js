@@ -1,12 +1,22 @@
 import React from 'react';
-import './css/tailwind.css';
-import BoxPrincipal from './components/BoxPrincipal/index';
+/* import pages */
+import Home from './pages/Home';
+
+/* import components */
+import Header from './components/Header';
+import Footer from './components/Footer';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <div className="app">
-      <BoxPrincipal />
-    </div>
+    <>
+      <Header></Header>
+      <div c3lassName="container">
+        <Home />
+      </div>
+      <Footer></Footer>
+    </>
   );
 }
 
