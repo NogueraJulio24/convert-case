@@ -1,13 +1,14 @@
-import React from 'react'
-import logo from '../../assets/img/text_convert.png'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import logo from '../../assets/img/text_convert.png';
 
 const Header = () => {
     return(
         <>
             <nav className="navbar navbar-expand-lg navbar-light bg-white">
-                <a className="navbar-brand" href="#">
+                <Link className="navbar-brand" to="/">
                     <img src={logo} width="50px"></img>
-                </a>
+                </Link>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
