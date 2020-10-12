@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <Header></Header>
-      <div c3lassName="container">
+      <div className="container">
         <Home />
       </div>
       <Footer></Footer>
