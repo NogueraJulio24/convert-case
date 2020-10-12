@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: textconverter.xyz
+Token: cd2c0247bcff083ab09bc4496c277636fcf4ef873093106b9831b51ee3006a4e
