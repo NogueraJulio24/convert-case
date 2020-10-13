@@ -18,7 +18,7 @@ const Footer = () => {
                 className="text-center"
                 >
                     Copyright 2020 Text Convert | 
-                    Created by <a href=""> @noguerajulioces </a>
+                    Created by <a href="https://twitter.com/noguerajulioces" target="_blank" rel="noopener noreferrer"> @noguerajulioces </a>
                     | <Link to="privacity-policy">Privacity Policy</Link> 
                     | <Link to="sitemap">Sitemap</Link> 
                     | <Link to="about">About</Link>

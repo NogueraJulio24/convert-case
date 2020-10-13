@@ -7,7 +7,7 @@ const Header = () => {
         <>
             <nav className="navbar navbar-expand-lg navbar-light bg-white">
                 <Link className="navbar-brand" to="/">
-                    <img src={logo} width="50px"></img>
+                    <img src={logo} width="50px" alt="logo"></img>
                 </Link>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
