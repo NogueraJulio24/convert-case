@@ -20,8 +20,8 @@ const Footer = () => {
                     Copyright 2020 Text Convert | 
                     Created by <a href="https://twitter.com/noguerajulioces" target="_blank" rel="noopener noreferrer"> @noguerajulioces </a>
                     | <Link to="privacity-policy">Privacity Policy</Link> 
+                    | <Link to="terms-of-use">Terms of use</Link>
                     | <Link to="sitemap">Sitemap</Link> 
-                    | <Link to="about">About</Link>
                 </p>
             </Foot>
         </>

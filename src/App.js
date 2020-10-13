@@ -6,6 +6,9 @@ import ReactGa from 'react-ga';
 import Home from './pages/Home';
 import Privacity from './pages/Privacity';
 import NotFoundPage from './pages/NotFoundPage';
+import About from './pages/About';
+import TermsOfUse from './pages/TermsOfUse';
+
 
 /* import components */
 import Header from './components/Header';
@@ -28,7 +31,9 @@ function App() {
           <Header></Header>
             <Switch>
               <Route exact path="/" component={Home}></Route>
+              <Route exac path="/about" component={About}></Route>
               <Route exact path="/privacity-policy" component={Privacity}></Route>
+              <Route exact path="/terms-of-use" component={TermsOfUse}></Route>
               <Route path="*" component={NotFoundPage} />
             </Switch>
           <Footer></Footer>
